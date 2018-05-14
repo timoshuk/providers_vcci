@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -301,5 +302,27 @@ template {
 html,
 body {
   overflow-x: hidden; }
+
+.providers-wrapper, .providers-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif; }
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/images/header/header_background.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 15vh 10px 10px 10px; }
+
+.header__tetle {
+  color: white;
+  text-shadow: 0 0 2px #000;
+  font-size: 60px;
+  line-height: 1.2em; }
 
 /*# sourceMappingURL=styles.css.map */
