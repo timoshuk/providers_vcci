@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -299,6 +298,34 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("/fonts/DroidSerif-Bold.woff2") format("woff2"), url("/fonts/DroidSerif-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("/fonts/DroidSerif-BoldItalic.woff2") format("woff2"), url("/fonts/DroidSerif-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("/fonts/DroidSerif.woff2") format("woff2"), url("/fonts/DroidSerif.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("/fonts/DroidSerif-Italic.woff2") format("woff2"), url("/fonts/DroidSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
 html,
 body {
   overflow-x: hidden; }
@@ -314,17 +341,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif; }
+  font-family: 'Droid Serif', sans-serif; }
 
 @media (min-width: 800px) {
   .providers-wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
     box-shadow: 0 5px 10px rgba(0, 255, 128, 0.8); } }
 
 .full-page {
   min-height: 100vh;
-  padding: 10vh 30px 10px 30px; }
+  padding: 10vh 40px 20px 40px; }
 
 .block-header {
   font-size: 2em;
@@ -378,7 +405,53 @@ body {
     margin: 10px;
     width: 40%; } }
 
-@media (min-width: 800px) {
+.meme__profit {
+  width: 80%;
+  margin: 0 auto; }
+
+.meme__list {
+  list-style: none; }
+
+.meme__item {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 1.5rem;
+  position: relative; }
+  .meme__item::before {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -15px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/meme/success.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.meme__memasik {
+  background-image: url(/images/meme/baby.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  width: 80%;
+  min-height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.meme__header-2 {
+  padding: 0;
+  margin: 0;
+  max-width: 200px;
+  font-size: 16px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  text-align: right; }
+
+@media (min-width: 900px) {
   .meme {
     display: flex;
     justify-content: center; }
@@ -387,18 +460,9 @@ body {
   .meme__memasik {
     width: 60%; }
   .meme__memasik {
-    background-image: url(/images/meme/baby.png);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
+    padding: 20px; }
   .meme__header-2 {
-    font-size: 3.2vmax;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-    max-width: 300px; } }
+    font-size: 3vmax;
+    max-width: 500px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('/fonts/DroidSerif-Bold.woff2') format('woff2'),
+        url('/fonts/DroidSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('/fonts/DroidSerif-BoldItalic.woff2') format('woff2'),
+        url('/fonts/DroidSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('/fonts/DroidSerif.woff2') format('woff2'),
+        url('/fonts/DroidSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('/fonts/DroidSerif-Italic.woff2') format('woff2'),
+        url('/fonts/DroidSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 html,
 body {
     overflow-x: hidden;
@@ -16,12 +52,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Droid Serif', sans-serif;
 }
 
 @media (min-width: 800px) {
     .providers-wrapper {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 20px auto;
         box-shadow: 0 5px 10px rgba(0, 255, 128, .8);
     }
