@@ -299,28 +299,28 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: "Droid Serif";
   src: url("/fonts/DroidSerif-Bold.woff2") format("woff2"), url("/fonts/DroidSerif-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: "Droid Serif";
   src: url("/fonts/DroidSerif-BoldItalic.woff2") format("woff2"), url("/fonts/DroidSerif-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: "Droid Serif";
   src: url("/fonts/DroidSerif.woff2") format("woff2"), url("/fonts/DroidSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: "Droid Serif";
   src: url("/fonts/DroidSerif-Italic.woff2") format("woff2"), url("/fonts/DroidSerif-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
@@ -341,7 +341,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Droid Serif', sans-serif; }
+  font-family: "Droid Serif", sans-serif; }
 
 @media (min-width: 800px) {
   .providers-wrapper {
@@ -436,7 +436,7 @@ body {
   background-size: cover;
   padding: 5px;
   width: 80%;
-  min-height: 200px;
+  min-height: 300px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -446,7 +446,7 @@ body {
   padding: 0;
   margin: 0;
   max-width: 200px;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   text-shadow: 2px 2px 5px black;
   text-align: right; }
