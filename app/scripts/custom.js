@@ -37,13 +37,21 @@ window.onload = function() {
     let size = 0;
     for (let i = 0; i < gItem.length; i++) {
       let colSize = gItem[i].offsetHeight;
-      size = size > colSize ? size : colSize;
+      if (size < colSize) {
+        size = colSize;
+      }
     }
     for (let k = 0; k < gItem.length; k++) {
-      gItem[k].style.height = size + "px";
+      gItem[k].style.height = `${size}px`;
     }
   }
   blockSize();
 
-  window.addEventListener("resize", blockSize, false);
+  window.addEventListener(
+    "resize",
+    function() {
+      blockSize();
+    },
+    false
+  );
 };

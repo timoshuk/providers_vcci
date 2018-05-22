@@ -35,7 +35,9 @@ window.onload = function () {
     var size = 0;
     for (var i = 0; i < gItem.length; i++) {
       var colSize = gItem[i].offsetHeight;
-      size = size > colSize ? size : colSize;
+      if (size < colSize) {
+        size = colSize;
+      }
     }
     for (var k = 0; k < gItem.length; k++) {
       gItem[k].style.height = size + "px";
@@ -43,5 +45,7 @@ window.onload = function () {
   }
   blockSize();
 
-  window.addEventListener("resize", blockSize, false);
+  window.addEventListener("resize", function () {
+    blockSize();
+  }, false);
 };
