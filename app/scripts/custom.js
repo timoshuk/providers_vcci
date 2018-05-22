@@ -1,7 +1,9 @@
 window.onload = function() {
+  let gItem = document.querySelectorAll(".green-services__item");
+
   $(".green-services__slider").slick({
     mobileFirst: true,
-    dots: true,
+    infinite: false,
     arrows: false,
     autoplay: true,
     speed: 300,
@@ -9,15 +11,17 @@ window.onload = function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 3
+          dots: true,
+          slidesToShow: 2
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2
+          dots: true,
+          slidesToShow: 3
         }
       },
       {
@@ -28,4 +32,18 @@ window.onload = function() {
       }
     ]
   });
+
+  function blockSize() {
+    let size = 0;
+    for (let i = 0; i < gItem.length; i++) {
+      let colSize = gItem[i].offsetHeight;
+      size = size > colSize ? size : colSize;
+    }
+    for (let k = 0; k < gItem.length; k++) {
+      gItem[k].style.height = size + "px";
+    }
+  }
+  blockSize();
+
+  window.addEventListener("resize", blockSize, false);
 };
