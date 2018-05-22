@@ -48,10 +48,11 @@ body {
 
 .providers-wrapper {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   font-size: var(--text-size);
   line-height: 1.4;
   font-weight: 500;
+  z-index: 2500;
 }
 
 .providers-wrapper * {
@@ -64,7 +65,7 @@ body {
 @media (min-width: 800px) {
   .providers-wrapper {
     max-width: 1400px;
-    margin: 20px auto;
-    box-shadow: 0 5px 10px var(--main-color);
+    margin: 20px auto 330px;
+    box-shadow: 0 0px 10px 2px var(--main-color);
   }
 }
