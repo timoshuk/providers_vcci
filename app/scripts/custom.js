@@ -50,7 +50,7 @@ window.onload = function() {
   window.addEventListener(
     "resize",
     function() {
-      blockSize();
+      setTimeout(blockSize, 600);
     },
     false
   );

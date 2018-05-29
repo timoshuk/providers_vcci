@@ -1,0 +1,14 @@
+.contacts {
+  display: inline-block;
+  padding: 20px 40px;
+  box-shadow: 0 0 5px 1px black;
+  list-style: none;
+  background: var(--main-gradient);
+}
+.contacts__link {
+  text-decoration: none;
+  color: black;
+}
+.contacts__type {
+  font-weight: 900;
+}
