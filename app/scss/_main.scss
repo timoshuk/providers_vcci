@@ -53,6 +53,7 @@ body {
   line-height: 1.4;
   font-weight: 500;
   z-index: 2500;
+  margin-bottom: 490px;
 }
 
 .providers-wrapper * {
@@ -65,7 +66,7 @@ body {
 @media (min-width: 800px) {
   .providers-wrapper {
     max-width: 1400px;
-    margin: 20px auto 330px;
+    margin: 20px auto 305px;
     box-shadow: 0 0px 10px 2px var(--main-color);
   }
 }
