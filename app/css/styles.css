@@ -355,7 +355,7 @@ body {
 @media (min-width: 800px) {
   .providers-wrapper {
     max-width: 1400px;
-    margin: 20px auto 305px;
+    margin: 0px auto 305px;
     box-shadow: 0 0px 10px 2px var(--main-color); } }
 
 .full-page {
@@ -368,28 +368,43 @@ body {
   margin-bottom: 0.5em; }
 
 .header {
+  position: relative;
+  text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/images/header/header_background.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center; }
+  background-repeat: no-repeat; }
+
+.header-background {
+  display: none; }
 
 .header__title {
+  position: relative;
+  z-index: 2500;
   color: white;
   text-shadow: 0 0 2px #000;
   font-size: 60px;
   line-height: 1.2em; }
 
 @media (min-width: 600px) {
+  .header {
+    background: initial; }
   .header__title {
     max-width: 760px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .header-background {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100; } }
 
 @media (min-width: 800px) {
   .header {
     -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%); }
+            clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
+    min-width: 100vh; }
   .header__title {
     font-size: 100px;
     max-width: 1000px; } }
