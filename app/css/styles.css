@@ -575,4 +575,9 @@ body {
   .footer__map {
     width: 60%; } }
 
+@media (min-width: 1000px) {
+  .footer {
+    left: 50%;
+    margin-left: -700px; } }
+
 /*# sourceMappingURL=styles.css.map */

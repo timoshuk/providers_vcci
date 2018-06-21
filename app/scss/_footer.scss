@@ -30,3 +30,10 @@
     width: 60%;
   }
 }
+
+@media (min-width: 1000px) {
+  .footer {
+    left: 50%;
+    margin-left: -700px;
+  }
+}
