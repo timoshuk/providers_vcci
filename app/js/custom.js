@@ -1,6 +1,7 @@
 "use strict";
 
 window.onload = function () {
+  // Skider
   var gItem = document.querySelectorAll(".green-services__item");
 
   $(".green-services__slider").slick({
@@ -48,4 +49,26 @@ window.onload = function () {
   window.addEventListener("resize", function () {
     setTimeout(blockSize, 600);
   }, false);
+
+  // End Slider
+
+  var acordionBtn = document.querySelectorAll(".acordion__button");
+
+  for (var i = 0; i < acordionBtn.length; i++) {
+    acordionBtn[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      var sib = this.nextElementSibling;
+      if (sib.classList.contains("acordion--active")) {
+        sib.classList.remove("acordion--active");
+      } else {
+        for (var k = 0; k < acordionBtn.length; k++) {
+          var sibItem = acordionBtn[k].nextElementSibling;
+          sibItem.classList.remove("acordion--active");
+        }
+        setTimeout(function () {
+          sib.classList.add("acordion--active");
+        }, 400);
+      }
+    });
+  }
 };

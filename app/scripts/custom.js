@@ -1,4 +1,5 @@
 window.onload = function() {
+  // Skider
   let gItem = document.querySelectorAll(".green-services__item");
 
   $(".green-services__slider").slick({
@@ -54,4 +55,26 @@ window.onload = function() {
     },
     false
   );
+
+  // End Slider
+
+  let acordionBtn = document.querySelectorAll(".acordion__button");
+
+  for (let i = 0; i < acordionBtn.length; i++) {
+    acordionBtn[i].addEventListener("click", function(evt) {
+      evt.preventDefault();
+      let sib = this.nextElementSibling;
+      if (sib.classList.contains("acordion--active")) {
+        sib.classList.remove("acordion--active");
+      } else {
+        for (let k = 0; k < acordionBtn.length; k++) {
+          let sibItem = acordionBtn[k].nextElementSibling;
+          sibItem.classList.remove("acordion--active");
+        }
+        setTimeout(() => {
+          sib.classList.add("acordion--active");
+        }, 400);
+      }
+    });
+  }
 };
