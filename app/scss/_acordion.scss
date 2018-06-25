@@ -29,11 +29,18 @@
 
 .acordion__content {
   z-index: 100;
-  padding: 5px 10px;
-  background-color: white;
+  padding: 0px 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.8s;
+}
+.acordion__text{
+  padding: 10px;
+}
+
+.acordion__list{
+  padding: 20px;
+  font-weight: 700;
 }
 
 .acordion--active {
