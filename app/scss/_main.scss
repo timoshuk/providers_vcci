@@ -51,11 +51,26 @@ body {
   overflow-x: hidden;
 }
 
+h1{
+  font-size: 6rem;
+  line-height: 1.2em;
+}
+
+h2{
+  font-size: 4rem;
+  line-height: 1em;
+}
+h3{
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+
+
 .providers-wrapper {
   position: relative;
   background-color: rgba(255, 255, 255, 1);
   font-size: var(--text-size);
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 500;
   z-index: 2500;
   margin-bottom: 490px;

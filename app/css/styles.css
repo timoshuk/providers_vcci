@@ -341,11 +341,23 @@ html,
 body {
   overflow-x: hidden; }
 
+h1 {
+  font-size: 6rem;
+  line-height: 1.2em; }
+
+h2 {
+  font-size: 4rem;
+  line-height: 1em; }
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.2em; }
+
 .providers-wrapper {
   position: relative;
   background-color: white;
   font-size: var(--text-size);
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 500;
   z-index: 2500;
   margin-bottom: 490px; }
@@ -388,9 +400,7 @@ body {
   position: relative;
   z-index: 2500;
   color: white;
-  text-shadow: 0 0 2px #000;
-  font-size: 60px;
-  line-height: 1.2em; }
+  text-shadow: 0 0 2px #000; }
 
 @media (min-width: 600px) {
   .header {
@@ -418,6 +428,26 @@ body {
   .header__title {
     font-size: 100px;
     max-width: 1000px; } }
+
+.message__title, .message__sub-title {
+  text-align: center;
+  margin-bottom: 1.2em; }
+
+.message__text {
+  font-style: italic; }
+
+@media (min-width: 600px) {
+  .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .message__title-wrapper {
+    flex-basis: 200px;
+    margin-right: 20px;
+    flex-grow: 1; }
+  .message__text {
+    flex-basis: 400px;
+    flex-grow: 2; } }
 
 .list-services__services {
   list-style: none; }

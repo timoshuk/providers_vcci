@@ -1,0 +1,26 @@
+.message__title, .message__sub-title{
+    text-align: center;
+    margin-bottom: 1.2em;
+    
+}
+
+.message__text{
+    font-style: italic;
+}
+
+@media (min-width: 600px){
+    .message{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .message__title-wrapper{
+        flex-basis: 200px;
+        margin-right: 20px;
+        flex-grow: 1;
+    }
+    .message__text{
+        flex-basis: 400px; 
+        flex-grow: 2;
+    }
+}
