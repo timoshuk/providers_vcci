@@ -360,7 +360,7 @@ h3 {
   line-height: 1.5;
   font-weight: 500;
   z-index: 2500;
-  margin-bottom: 490px; }
+  margin-bottom: 580px; }
 
 .providers-wrapper * {
   margin: 0;
@@ -380,8 +380,6 @@ h3 {
   padding: var(--block-padding); }
 
 .block-header {
-  font-size: 2em;
-  font-weight: 700;
   margin-bottom: 0.5em; }
 
 .header {
@@ -450,130 +448,13 @@ h3 {
     flex-basis: 400px;
     flex-grow: 2; } }
 
-.list-services__services {
-  list-style: none; }
-
-.list-services__item {
-  background-color: var(--main-color);
-  padding: 20px 20px;
-  margin-bottom: 1.2em; }
-
-@media (min-width: 800px) {
-  .list-services__header {
-    font-size: 60px;
-    text-align: center; }
-  .list-services__services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .list-services__item {
-    margin: 10px;
-    width: 40%; } }
-
-.meme__profit {
-  width: 80%;
-  margin: 0 auto; }
-
-.meme__list {
-  list-style: none; }
-
-.meme__item {
-  padding: 0px 10px 0px 10px;
-  margin-bottom: 1.5rem;
-  position: relative; }
-  .meme__item::before {
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: -15px;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url(/images/meme/success.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-
-.meme__memasik {
-  background-image: url(/images/meme/baby.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5px;
-  width: 80%;
-  min-height: 300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end; }
-
-.meme__header-2 {
-  padding: 0;
-  margin: 0;
-  max-width: 200px;
-  font-size: 18px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  text-align: right; }
-
-@media (min-width: 900px) {
-  .meme {
-    display: flex;
-    justify-content: center; }
-  .meme__profit {
-    width: 30%; }
-  .meme__memasik {
-    width: 60%; }
-  .meme__memasik {
-    padding: 20px; }
-  .meme__header-2 {
-    font-size: 3vmax;
-    max-width: 500px; } }
-
-.green-services__slider {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 10px; }
-
-.green-services__item {
-  display: block;
-  margin: 5px;
-  border-radius: 3px;
-  background: var(--main-gradient);
-  box-shadow: 0 0 5px 1px black; }
-
-.green-services__head {
-  font-size: var(--h2-size);
-  line-height: 1.2;
-  padding: 10px; }
-
-.green-services__text {
-  padding: 10px; }
-
-.slick-dots {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 10px; }
-  .slick-dots li button {
-    border-radius: 70%;
-    color: transparent;
-    font-size: 10px;
-    background-color: inherit;
-    border: none;
-    box-shadow: 0 0 2px 1px black;
-    margin: 5px;
-    padding: 0 2px;
-    outline: none; }
-  .slick-dots li.slick-active button {
-    background: var(--main-color); }
-
 .contacts {
   display: inline-block;
   padding: 20px 40px;
   box-shadow: 0 0 5px 1px black;
   list-style: none;
-  background: var(--main-gradient); }
+  background: var(--main-gradient);
+  font-size: 2.5rem; }
 
 .contacts__link {
   text-decoration: none;
@@ -584,7 +465,7 @@ h3 {
 
 .acordion {
   background-color: transparent;
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -621,7 +502,7 @@ h3 {
   font-weight: 700; }
 
 .acordion--active {
-  max-height: 300px; }
+  max-height: 500px; }
 
 @-webkit-keyframes accordionIn {
   0% {
@@ -680,8 +561,9 @@ h3 {
   .footer__map {
     width: 60%; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .footer {
+    max-width: 1400px;
     left: 50%;
     margin-left: -700px; } }
 

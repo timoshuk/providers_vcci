@@ -31,8 +31,9 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .footer {
+    max-width: 1400px;
     left: 50%;
     margin-left: -700px;
   }
