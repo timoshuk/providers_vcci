@@ -35,7 +35,7 @@
 }
 
 :root {
-  --block-padding: 10vh 40px 20px 40px;
+  --block-padding: 10vh 20px 40px 20px;
   --main-color: rgba(0, 255, 128, 0.5);
   --hover-color: rgba(0, 200, 128, 0.5);
   --main-gradient: linear-gradient(var(--main-color), #25ae88);
@@ -43,7 +43,7 @@
   --h2-size: 1.5em;
 }
 
-html{
+html {
   font-size: 10px;
 }
 html,
@@ -51,20 +51,19 @@ body {
   overflow-x: hidden;
 }
 
-h1{
+h1 {
   font-size: 6rem;
   line-height: 1.2em;
 }
 
-h2{
+h2 {
   font-size: 4rem;
   line-height: 1em;
 }
-h3{
+h3 {
   font-size: 2.5rem;
   line-height: 1.2em;
 }
-
 
 .providers-wrapper {
   position: relative;
@@ -82,7 +81,6 @@ h3{
   box-sizing: border-box;
   font-family: "Droid Serif", sans-serif;
 }
-
 
 @media (min-width: 800px) {
   .providers-wrapper {

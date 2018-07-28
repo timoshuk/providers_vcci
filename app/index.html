@@ -24,7 +24,7 @@
 <body>
 
     <div class="providers-wrapper">
-        <header class="header full-page">
+        <header class="full-page header">
             <video class="header-background" poster="/images/header/header_background.jpg" autoplay loop muted>
                 <source src="/video/energy.webm">
                 <source src="/video/energy.mp4">
@@ -32,11 +32,11 @@
             <h1 class="header__title">Зелені рішення для вас та вашого бізнесу</h1>
         </header>
         <!-- End Header -->
-        <div class="message full-page">
+        <div class="full-page message">
             <div class="message__title-wrapper">
-            <h2 class="message__title">Зелені рішення– сталість вашого бізнесу.</h1>
-                <h3 class="message__sub-title">Партнерство. Консультації. Інформування. Навчання.</h2>
-                </div>
+                <h2 class="message__title">Зелені рішення– сталість вашого бізнесу.</h1>
+                    <h3 class="message__sub-title">Партнерство. Консультації. Інформування. Навчання.</h2>
+            </div>
             <p class="message__text">Волинська торгово-промислова палата є провідником «зелених» рішень, активним агентом впливу в галузі популяризації
                 ідей зеленої економіки серед бізнесу Волині, а також центром надання послуг в сфері ресурсо- та енергоефективності.
                 У нас працює Комітет провайдерів «зелених» послуг – платформа фахових рішень, яка об’єднує експертів, фахівців,
@@ -45,7 +45,40 @@
             </p>
 
         </div>
-        <div class="list-services full-page">
+        <!-- End message -->
+
+        <div class="full-page acordion">
+            <button class="acordion__button">Екоконсалтинг</button>
+            <div class="acordion__content acordion--active">
+                <p class="acordion__text">Консультації з питань екологічної сертифікації та маркування продукції – підтвердження екологічних переваг
+                    товарів та послуг.</p>
+            </div>
+            <button class="acordion__button">Еко-майстерня з питань органічного виробництва</button>
+            <div class="acordion__content">
+                <p class="acordion__text">Консультації, семінари, тренінги з питань ведення органічного бізнесу та сертифікації органічної продукції.</p>
+            </div>
+            <button class="acordion__button">Семінари та тренінги</button>
+            <div class="acordion__content">
+                <p class="acordion__text">Освітні заходи на екологічну тематику, природоохоронного законодавства, питань енергозбереження, ресурсоефективного,
+                    більш чистого та органічного виробництва, а також на інші теми згідно запитів замовника</p>
+            </div>
+            <button class="acordion__button">Екоаутсорсинг</button>
+            <div class="acordion__content">
+                <p class="acordion__text">Оформлення дозволів на викиди забруднюючих речовин в атмосферне повітря</p>
+
+                <ul class="acordion__list">
+                    <li class="acordion__list-item">Послуги екологічної вимірювальної лабораторії</li>
+                    <li class="acordion__list-item">Налагодження систем вентиляції на проектну/рівномірну продуктивність та їх паспортизація</li>
+                    <li class="acordion__list-item">Скорочення санітарно-захисної зони підприємства</li>
+                    <li class="acordion__list-item">Підготовка висновку оцінки впливу на довкілля</li>
+                    <li class="acordion__list-item">Роботи, пов’язані з отриманням дозволу на викиди забруднюючих речовин в атмосферне повітря.</li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- acordion -->
+
+        <div class="full-page list-services">
             <div class="list-services__wrapper">
                 <h2 class="block-header list-services__header">Що ми пропонуємо?</h2>
                 <ul class="list-services__services">
@@ -129,36 +162,7 @@
             </ul>
         </div>
         <!-- green-services -->
-        <div class="acordion full-page">
-            <button class="acordion__button">Екоконсалтинг</button>
-            <div class="acordion__content acordion--active">
-                <p class="acordion__text">Консультації з питань екологічної сертифікації та маркування продукції – підтвердження екологічних переваг
-                    товарів та послуг.</p>
-            </div>
-            <button class="acordion__button">Еко-майстерня з питань органічного виробництва</button>
-            <div class="acordion__content">
-                <p class="acordion__text">Консультації, семінари, тренінги з питань ведення органічного бізнесу та сертифікації органічної продукції.</p>
-            </div>
-            <button class="acordion__button">Семінари та тренінги</button>
-            <div class="acordion__content">
-                <p class="acordion__text">Освітні заходи на екологічну тематику, природоохоронного законодавства, питань енергозбереження, ресурсоефективного,
-                    більш чистого та органічного виробництва, а також на інші теми згідно запитів замовника</p>
-            </div>
-            <button class="acordion__button">Екоаутсорсинг</button>
-            <div class="acordion__content">
-                <p class="acordion__text">Оформлення дозволів на викиди забруднюючих речовин в атмосферне повітря</p>
 
-                <ul class="acordion__list">
-                    <li class="acordion__list-item">Послуги екологічної вимірювальної лабораторії</li>
-                    <li class="acordion__list-item">Налагодження систем вентиляції на проектну/рівномірну продуктивність та їх паспортизація</li>
-                    <li class="acordion__list-item">Скорочення санітарно-захисної зони підприємства</li>
-                    <li class="acordion__list-item">Підготовка висновку оцінки впливу на довкілля</li>
-                    <li class="acordion__list-item">Роботи, пов’язані з отриманням дозволу на викиди забруднюючих речовин в атмосферне повітря.</li>
-
-                </ul>
-            </div>
-        </div>
-        <!-- acordion -->
 
     </div>
     <!-- providers-wrapper -->

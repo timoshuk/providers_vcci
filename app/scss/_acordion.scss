@@ -1,6 +1,6 @@
 .acordion {
-  background-color: #f2f2f2;
-  box-shadow: 0 1px 5px 1px black;
+  background-color: transparent;
+  //box-shadow: 0 1px 5px 1px black;
   margin: 0;
   padding: 0;
   display: flex;
@@ -34,11 +34,11 @@
   overflow: hidden;
   transition: max-height 0.8s;
 }
-.acordion__text{
+.acordion__text {
   padding: 10px;
 }
 
-.acordion__list{
+.acordion__list {
   padding: 20px;
   font-weight: 700;
 }

@@ -1,55 +1,53 @@
 .header {
-    position: relative;
-    text-align: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/images/header/header_background.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(/images/header/header_background.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.header-background{
-    display: none;
+.header-background {
+  display: none;
 }
 
 .header__title {
-    position: relative;
-    z-index: 2500;
-    color: white;
-    text-shadow: 0 0 2px #000;
+  position: relative;
+  z-index: 2500;
+  color: white;
+  text-shadow: 0 0 2px #000;
 }
 
 @media (min-width: 600px) {
-    .header{
-        background: initial;
-        min-height: 100vh;
-        margin: 0;
-        
-    }
-	.header__title{
-        max-width: 760px;
-        margin: 0 auto;
-    }
-    .header-background{
-        display: block;
-        position: absolute;
-        width: 100%;
-        max-width: 100%;
-        
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 100;
-       
-    }
-} 
+  .header {
+    background: initial;
+    margin: 0;
+  }
+  .header__title {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .header-background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
 
-@media (min-width: 800px){
-    .header{
-        clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
-    }
-    .header__title{
-        font-size: 100px;
-        max-width: 1000px;
-    }
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 800px) {
+  .header {
+    clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
+  }
+  .header__title {
+    font-size: 100px;
+    max-width: 1000px;
+  }
 }
