@@ -561,10 +561,11 @@ h3 {
   .footer__map {
     width: 60%; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .footer {
     max-width: 1400px;
     left: 50%;
-    margin-left: -700px; } }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }
 
 /*# sourceMappingURL=styles.css.map */
