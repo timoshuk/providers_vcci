@@ -36,6 +36,7 @@
 
 :root {
   --block-padding: 10vh 20px 40px 20px;
+  --font-color: rgba(0, 0, 0, 0.84);
   --main-color: rgba(0, 255, 128, 0.5);
   --hover-color: rgba(0, 200, 128, 0.5);
   --main-gradient: linear-gradient(var(--main-color), #25ae88);
@@ -54,15 +55,18 @@ body {
 h1 {
   font-size: 6rem;
   line-height: 1.2em;
+  margin-bottom: 1.5em;
 }
 
 h2 {
   font-size: 4rem;
   line-height: 1em;
+  margin-bottom: 1.5em;
 }
 h3 {
   font-size: 2.5rem;
   line-height: 1.2em;
+  margin-bottom: 1.5em;
 }
 
 .providers-wrapper {
@@ -70,14 +74,14 @@ h3 {
   background-color: rgba(255, 255, 255, 1);
   font-size: var(--text-size);
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--font-color);
   z-index: 2500;
   margin-bottom: 580px;
 }
 
 .providers-wrapper * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Droid Serif", sans-serif;
 }
