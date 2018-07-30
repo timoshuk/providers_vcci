@@ -402,7 +402,8 @@ h3 {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
 
 .header-background {
   display: none; }
@@ -510,8 +511,7 @@ h3 {
   padding: 10px; }
 
 .acordion__list {
-  padding: 20px;
-  font-weight: 700; }
+  padding: 20px; }
 
 .acordion--active {
   max-height: 500px; }
