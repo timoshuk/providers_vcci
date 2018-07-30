@@ -378,6 +378,10 @@ h3 {
     margin: 0px auto 305px;
     box-shadow: 0 0px 10px 2px var(--main-color); } }
 
+.hidden {
+  display: none;
+  opacity: 0; }
+
 .list {
   list-style: none;
   font-size: 2.2rem; }
