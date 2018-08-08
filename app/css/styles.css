@@ -402,7 +402,7 @@ h3 {
   min-height: 90vh;
   position: relative;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/header/header_background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/header/header_background_mobile.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -437,6 +437,11 @@ h3 {
 
 @media (min-width: 800px) {
   .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/header/header_background.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%); }
   .header__title {
