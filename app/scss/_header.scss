@@ -23,7 +23,12 @@
 
 @media (min-width: 600px) {
   .header {
-    background: initial;
+    min-height: 90vh;
+    background: url(../images/header/header_background_tablet.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     margin: 0;
   }
   .header__title {
@@ -45,11 +50,11 @@
 
 @media (min-width: 800px) {
   .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-      url(../images/header/header_background.jpg);
-    background-position: center center;
+    min-height: 90vh;
+    background: url(../images/header/header_background.jpg);
+    background-position: top center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
   }
