@@ -420,7 +420,7 @@ h3 {
 
 @media (min-width: 600px) {
   .header {
-    min-height: 90vh;
+    min-height: 80vh;
     background: url(../images/header/header_background_tablet.jpg);
     background-position: top center;
     background-attachment: fixed;
