@@ -594,6 +594,9 @@ h3 {
 .footer__contacts {
   text-align: center; }
 
+.footer__contacts-title {
+  margin-bottom: 5px; }
+
 .footer__map iframe {
   width: 100%;
   max-height: 300px; }
