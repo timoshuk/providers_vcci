@@ -327,7 +327,7 @@ template {
   font-display: swap; }
 
 :root {
-  --block-padding: 10vh 20px 40px 20px;
+  --block-padding: 60px 20px 40px 20px;
   --font-color: rgba(0, 0, 0, 0.84);
   --main-color: rgba(0, 255, 128, 0.5);
   --hover-color: rgba(0, 200, 128, 0.5);
@@ -423,7 +423,6 @@ h3 {
     min-height: 80vh;
     background: url(../images/header/header_background_tablet.jpg);
     background-position: top center;
-    background-attachment: fixed;
     background-size: 100% auto;
     background-repeat: no-repeat;
     margin: 0; }
@@ -445,7 +444,6 @@ h3 {
     min-height: 90vh;
     background: url(../images/header/header_background.jpg);
     background-position: top center;
-    background-attachment: fixed;
     background-size: 100% auto;
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
