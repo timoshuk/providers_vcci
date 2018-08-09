@@ -454,6 +454,10 @@ h3 {
     font-size: 8rem;
     max-width: 1000px; } }
 
+@media (min-width: 600px) {
+  .header {
+    min-height: 80vh; } }
+
 .message__title,
 .message__sub-title {
   text-align: center;
