@@ -327,7 +327,7 @@ template {
   font-display: swap; }
 
 :root {
-  --block-padding: 60px 20px 40px 20px;
+  --block-padding: 10vh 20px 40px 20px;
   --font-color: rgba(0, 0, 0, 0.84);
   --main-color: rgba(0, 255, 128, 0.5);
   --hover-color: rgba(0, 200, 128, 0.5);
