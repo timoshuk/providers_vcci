@@ -1,0 +1,26 @@
+.useful-content__wrapper {
+  position: relative;
+  text-align: center;
+}
+.useful-content__video {
+  position: relative;
+  max-width: 90vw;
+  min-height: 200px;
+  margin: 20px;
+}
+
+.useful-content__doc {
+  text-align: left;
+}
+
+.useful-content_doc-item {
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 800px) {
+  .useful-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

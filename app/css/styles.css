@@ -300,34 +300,35 @@ template {
 
 @font-face {
   font-family: "Droid Serif";
-  src: url("/fonts/DroidSerif-Bold.woff2") format("woff2"), url("/fonts/DroidSerif-Bold.woff") format("woff");
+  src: url("../fonts/DroidSerif-Bold.woff2") format("woff2"), url("../fonts/DroidSerif-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Droid Serif";
-  src: url("/fonts/DroidSerif-BoldItalic.woff2") format("woff2"), url("/fonts/DroidSerif-BoldItalic.woff") format("woff");
+  src: url("../fonts/DroidSerif-BoldItalic.woff2") format("woff2"), url("../fonts/DroidSerif-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Droid Serif";
-  src: url("/fonts/DroidSerif.woff2") format("woff2"), url("/fonts/DroidSerif.woff") format("woff");
+  src: url("../fonts/DroidSerif.woff2") format("woff2"), url("../fonts/DroidSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Droid Serif";
-  src: url("/fonts/DroidSerif-Italic.woff2") format("woff2"), url("/fonts/DroidSerif-Italic.woff") format("woff");
+  src: url("../fonts/DroidSerif-Italic.woff2") format("woff2"), url("../fonts/DroidSerif-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap; }
 
 :root {
-  --block-padding: 10vh 40px 20px 40px;
+  --block-padding: 10vh 20px 40px 20px;
+  --font-color: rgba(0, 0, 0, 0.84);
   --main-color: rgba(0, 255, 128, 0.5);
   --hover-color: rgba(0, 200, 128, 0.5);
   --main-gradient: linear-gradient(var(--main-color), #25ae88);
@@ -341,18 +342,33 @@ html,
 body {
   overflow-x: hidden; }
 
+h1 {
+  font-size: 6rem;
+  line-height: 1.2em;
+  margin-bottom: 1.5em; }
+
+h2 {
+  font-size: 4rem;
+  line-height: 1em;
+  margin-bottom: 1.5em; }
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  margin-bottom: 1.5em; }
+
 .providers-wrapper {
   position: relative;
   background-color: white;
   font-size: var(--text-size);
-  line-height: 1.4;
-  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--font-color);
   z-index: 2500;
-  margin-bottom: 490px; }
+  margin-bottom: 580px; }
 
 .providers-wrapper * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Droid Serif", sans-serif; }
 
@@ -362,24 +378,36 @@ body {
     margin: 0px auto 305px;
     box-shadow: 0 0px 10px 2px var(--main-color); } }
 
+.hidden {
+  display: none;
+  opacity: 0; }
+
+.list {
+  list-style: none;
+  font-size: 2.2rem; }
+
+.link {
+  color: var(--font-color);
+  transition: all 0.6s;
+  font-weight: 800; }
+  .link:hover, .link:focus {
+    color: var(--hover-color); }
+
 .full-page {
-  min-height: 100vh;
+  min-height: 40vh;
   min-width: 100%;
   padding: var(--block-padding); }
 
-.block-header {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 0.5em; }
-
 .header {
+  min-height: 90vh;
   position: relative;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/images/header/header_background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/header/header_background_mobile.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
 
 .header-background {
   display: none; }
@@ -388,14 +416,15 @@ body {
   position: relative;
   z-index: 2500;
   color: white;
-  text-shadow: 0 0 2px #000;
-  font-size: 60px;
-  line-height: 1.2em; }
+  text-shadow: 0 0 2px #000; }
 
 @media (min-width: 600px) {
   .header {
-    background: initial;
-    min-height: 100vh;
+    min-height: 80vh;
+    background: url(../images/header/header_background_tablet.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     margin: 0; }
   .header__title {
     max-width: 760px;
@@ -404,7 +433,6 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    max-width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -413,136 +441,50 @@ body {
 
 @media (min-width: 800px) {
   .header {
+    min-height: 90vh;
+    background: url(../images/header/header_background.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0% 100%); }
   .header__title {
-    font-size: 100px;
+    font-size: 8rem;
     max-width: 1000px; } }
 
-.list-services__services {
-  list-style: none; }
+@media (min-width: 600px) {
+  .header {
+    min-height: 80vh; } }
 
-.list-services__item {
-  background-color: var(--main-color);
-  padding: 20px 20px;
+.message__title,
+.message__sub-title {
+  text-align: center;
   margin-bottom: 1.2em; }
 
-@media (min-width: 800px) {
-  .list-services__header {
-    font-size: 60px;
-    text-align: center; }
-  .list-services__services {
+.message__text {
+  font-style: italic; }
+
+@media (min-width: 600px) {
+  .message {
+    padding-top: 40px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .list-services__item {
-    margin: 10px;
-    width: 40%; } }
-
-.meme__profit {
-  width: 80%;
-  margin: 0 auto; }
-
-.meme__list {
-  list-style: none; }
-
-.meme__item {
-  padding: 0px 10px 0px 10px;
-  margin-bottom: 1.5rem;
-  position: relative; }
-  .meme__item::before {
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: -15px;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url(/images/meme/success.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain; }
-
-.meme__memasik {
-  background-image: url(/images/meme/baby.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 5px;
-  width: 80%;
-  min-height: 300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end; }
-
-.meme__header-2 {
-  padding: 0;
-  margin: 0;
-  max-width: 200px;
-  font-size: 18px;
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  text-align: right; }
-
-@media (min-width: 900px) {
-  .meme {
-    display: flex;
-    justify-content: center; }
-  .meme__profit {
-    width: 30%; }
-  .meme__memasik {
-    width: 60%; }
-  .meme__memasik {
-    padding: 20px; }
-  .meme__header-2 {
-    font-size: 3vmax;
-    max-width: 500px; } }
-
-.green-services__slider {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 10px; }
-
-.green-services__item {
-  display: block;
-  margin: 5px;
-  border-radius: 3px;
-  background: var(--main-gradient);
-  box-shadow: 0 0 5px 1px black; }
-
-.green-services__head {
-  font-size: var(--h2-size);
-  line-height: 1.2;
-  padding: 10px; }
-
-.green-services__text {
-  padding: 10px; }
-
-.slick-dots {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 10px; }
-  .slick-dots li button {
-    border-radius: 70%;
-    color: transparent;
-    font-size: 10px;
-    background-color: inherit;
-    border: none;
-    box-shadow: 0 0 2px 1px black;
-    margin: 5px;
-    padding: 0 2px;
-    outline: none; }
-  .slick-dots li.slick-active button {
-    background: var(--main-color); }
+    justify-content: space-between;
+    align-items: center; }
+  .message__title-wrapper {
+    flex-basis: 200px;
+    margin-right: 20px;
+    flex-grow: 1; }
+  .message__text {
+    flex-basis: 400px;
+    flex-grow: 2; } }
 
 .contacts {
   display: inline-block;
   padding: 20px 40px;
   box-shadow: 0 0 5px 1px black;
   list-style: none;
-  background: var(--main-gradient); }
+  background: var(--main-gradient);
+  font-size: 2.5rem; }
 
 .contacts__link {
   text-decoration: none;
@@ -552,9 +494,8 @@ body {
   font-weight: 900; }
 
 .acordion {
-  background-color: #f2f2f2;
-  box-shadow: 0 1px 5px 1px black;
-  margin: 0;
+  background-color: transparent;
+  margin-bottom: 20px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -563,7 +504,7 @@ body {
 .acordion__button {
   z-index: 999;
   min-width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   font-weight: 700;
   background-color: var(--main-color);
@@ -587,11 +528,10 @@ body {
   padding: 10px; }
 
 .acordion__list {
-  padding: 20px;
-  font-weight: 700; }
+  padding: 20px; }
 
 .acordion--active {
-  max-height: 300px; }
+  max-height: 500px; }
 
 @-webkit-keyframes accordionIn {
   0% {
@@ -621,6 +561,28 @@ body {
             transform: scale(1);
     max-height: 500px; } }
 
+.useful-content__wrapper {
+  position: relative;
+  text-align: center; }
+
+.useful-content__video {
+  position: relative;
+  max-width: 90vw;
+  min-height: 200px;
+  margin: 20px; }
+
+.useful-content__doc {
+  text-align: left; }
+
+.useful-content_doc-item {
+  margin-bottom: 1.5em; }
+
+@media (min-width: 800px) {
+  .useful-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; } }
+
 .footer {
   width: 100%;
   position: fixed;
@@ -629,6 +591,9 @@ body {
 
 .footer__contacts {
   text-align: center; }
+
+.footer__contacts-title {
+  margin-bottom: 5px; }
 
 .footer__map iframe {
   width: 100%;
@@ -652,7 +617,9 @@ body {
 
 @media (min-width: 1000px) {
   .footer {
+    max-width: 1400px;
     left: 50%;
-    margin-left: -700px; } }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }
 
 /*# sourceMappingURL=styles.css.map */

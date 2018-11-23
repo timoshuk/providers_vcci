@@ -1,0 +1,70 @@
+.meme__profit {
+  width: 80%;
+  margin: 0 auto;
+}
+.meme__list {
+  list-style: none;
+}
+
+.meme__item {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -15px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/meme/success.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.meme__memasik {
+  background-image: url(/images/meme/baby.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.meme__header-2 {
+  padding: 0;
+  margin: 0;
+  max-width: 200px;
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  text-align: right;
+}
+
+@media (min-width: 900px) {
+  .meme {
+    display: flex;
+    justify-content: center;
+  }
+  .meme__profit {
+    width: 30%;
+  }
+  .meme__memasik {
+    width: 60%;
+  }
+  .meme__memasik {
+    padding: 20px;
+  }
+  .meme__header-2 {
+    font-size: 3vmax;
+    max-width: 500px;
+  }
+}

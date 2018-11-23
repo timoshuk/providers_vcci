@@ -1,0 +1,9 @@
+.link {
+  color: var(--font-color);
+  transition: all 0.6s;
+  font-weight: 800;
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}

@@ -1,0 +1,24 @@
+.list-services__services {
+  list-style: none;
+}
+.list-services__item {
+  background-color: var(--main-color);
+  padding: 20px 20px;
+  margin-bottom: 1.2em;
+}
+
+@media (min-width: 800px) {
+  .list-services__header {
+    font-size: 60px;
+    text-align: center;
+  }
+  .list-services__services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .list-services__item {
+    margin: 10px;
+    width: 40%;
+  }
+}

@@ -2,40 +2,55 @@
 <html lang="uk">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84856303-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84856303-2');
+    </script>
+
+    <!-- End google analitics tag -->
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Зелені рішення для вас та вашого бізнесу">
+
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#00ffbf">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#00ffbf">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#00ffbf">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/styles.css">
     <!--endbuild-->
-    <link rel="icon" href="images/unnamed.png" type="image/png">
+    <link rel="icon" href="images/LogoGreenPage.png" type="image/png">
     <title>Зелені послуги</title>
 </head>
 
 <body>
 
     <div class="providers-wrapper">
-        <header class="header full-page">
-            <video class="header-background" poster="/images/header/header_background.jpg" autoplay loop muted>
-                <source src="/video/energy.webm">
-                <source src="/video/energy.mp4">
+        <header class="full-page header">
+            <video class="header-background" poster="images/header/header_background.jpg" autoplay loop muted>
+                <source src="video/energy.webm">
+                <source src="video/energy.mp4">
             </video>
             <h1 class="header__title">Зелені рішення для вас та вашого бізнесу</h1>
         </header>
         <!-- End Header -->
-        <div class="message full-page">
-            <h2 class="message__title">Зелені рішення – сталість вашого бізнесу.</h1>
-                <h3 class="message__sub-title">Партнерство. Консультації. Інформування. Навчання.</h2>
-
+        <div class="full-page message">
+            <div class="message__title-wrapper">
+                <h2 class="message__title">Зелені рішення– сталість вашого бізнесу.</h1>
+                    <h3 class="message__sub-title">Партнерство. Консультації. Інформування. Навчання.</h2>
+            </div>
             <p class="message__text">Волинська торгово-промислова палата є провідником «зелених» рішень, активним агентом впливу в галузі популяризації
                 ідей зеленої економіки серед бізнесу Волині, а також центром надання послуг в сфері ресурсо- та енергоефективності.
                 У нас працює Комітет провайдерів «зелених» послуг – платформа фахових рішень, яка об’єднує експертів, фахівців,
@@ -44,127 +59,114 @@
             </p>
 
         </div>
-        <div class="list-services full-page">
-            <div class="list-services__wrapper">
-                <h2 class="block-header list-services__header">Що ми пропонуємо?</h2>
-                <ul class="list-services__services">
-                    <li class="list-services__item">Енергоаудит будівель і споруд.</li>
-                    <li class="list-services__item">Проектування, будівництво і сервіс сонячних електростанцій різних типів.</li>
-                    <li class="list-services__item">Підключення, супровід та консультації по «Зеленому тарифу».</li>
-                    <li class="list-services__item">Встановлення та обслуговування колекторів для підігріву води.</li>
-                    <li class="list-services__item">Виготовлення сонячних колекторів, ліхтарів, лавочок.</li>
-                    <li class="list-services__item">Консультування з питань сонячної енергетики. Альтернативна енергія для вашої оселі та бізнесу</li>
-                    <li class="list-services__item">Консультування з впровадження енергоощадних технологій на підприємстві та в офісі</li>
-                    <li class="list-services__item">Продаж, монтаж, сервісне обслуговування всієї лінійки обладнання Віссманн/Wiesmann (Котли, сонячні панелі,
-                        теплові насоси, опалення, водопостачання , водовідведення.)</li>
+        <!-- End message -->
 
-                    <li class="list-services__item">Оформлення дозволів на викиди забруднюючих речовин в атмосферне повітря</li>
-                    <li class="list-services__item">Скорочення санітарно-захисної зони підприємства</li>
-                    <li class="list-services__item">Послуги екологічної вимірювальної лабораторії</li>
-                    <li class="list-services__item">Підготовка висновку оцінки впливу на довкілля</li>
-                    <li class="list-services__item">Налагодження систем вентиляції на проектну/рівномірну продуктивність та їх паспортизація</li>
-                    <li class="list-services__item">Роботи, пов’язані з отриманням дозволу на викиди забруднюючих речовин в атмосферне повітря.</li>
-                </ul>
-                <!-- End list-services__services -->
-            </div>
-            <!-- End list-services__wrapper -->
-        </div>
-        <!-- End  list-services -->
-        <div class="meme">
-            <div class="meme__profit">
-                <h2 class="block-header meme__header">Яку вигоду Ви отримуєте?</h2>
-                <ul class="meme__list">
-                    <li class="meme__item">Заробіток на "зеленому" тарифі</li>
-                    <li class="meme__item">Незалежність від підвищення тарифів на енергоносії</li>
-                    <li class="meme__item">Зменшення шкоди довкіллю</li>
-                    <li class="meme__item">Раціональне використання ресурсів</li>
-                </ul>
-            </div>
-            <!-- End meme__profit -->
-            <div class="meme__memasik">
-                <h2 class="block-header meme__header-2">Те відчуття коли підняли тарифи, а у тебе сонячні панелі</h2>
-            </div>
-        </div>
-        <!-- End meme -->
-        <div class="green-services">
-            <ul class="green-services__slider">
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Побудова систем менеджменту ISO500001, 140001</h2>
-                    <p class="green-services__text">Експертна підтримка системи енергоменеджменту та консультації щодо сертифікації відповідно до вимог світового
-                        лідера сертифікації, технічних та експертних послуг - органу TUV SUD.</p>
-                </li>
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Екоконсалтинг</h2>
-                    <p class="green-services__text">Консультації з питань організації та сертифікації органічного виробництва. Консультації з питань екологічної
-                        сертифікації та маркування продукції - підтвердження екологічних переваг товарів та послуг.</p>
-                </li>
-
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Семінари та навчання</h2>
-                    <p class="green-services__text">На екологічну тематику, природоохоронного законодавства, питань енергозбереження, ресурсоефективного,
-                        більш чистого та органічного виробництва.</p>
-                </li>
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Готові енергетичні рішення</h2>
-                    <p class="green-services__text">Допомога та консультації від наших партнерів при встановленні енергозберігаючого та енергоефективного
-                        обладнання, інсталяції сонячних батарей, колекторів, отримання "зеленого" тарифу.</p>
-                </li>
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Екоаутсорсинг</h2>
-                    <p class="green-services__text">Оформлення дозвільних документів відповідно до вимог екологічного законодавства.</p>
-                </li>
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Діяльність комітету провайдерів "зелених" послуг</h2>
-                    <p class="green-services__text">
-                        Волинська ТПП об'єднує та сприяє діяльності підприємствам, що працюють в сфері надання екологічних послуг, енергоефективних
-                        технологій, енергозбереження, поводження з відходами тощо.
-                    </p>
-                </li>
-                <li class="green-services__item">
-                    <h2 class="green-services__head">Енергоаудит будівель та промислових об'єктів.</h2>
-
-                </li>
-
-            </ul>
-        </div>
-        <!-- green-services -->
-        <div class="acordion full-page">
+        <div class="full-page acordion">
             <button class="acordion__button">Екоконсалтинг</button>
             <div class="acordion__content acordion--active">
                 <p class="acordion__text">Консультації з питань екологічної сертифікації та маркування продукції – підтвердження екологічних переваг
                     товарів та послуг.</p>
             </div>
+
             <button class="acordion__button">Еко-майстерня з питань органічного виробництва</button>
             <div class="acordion__content">
                 <p class="acordion__text">Консультації, семінари, тренінги з питань ведення органічного бізнесу та сертифікації органічної продукції.</p>
             </div>
+
             <button class="acordion__button">Семінари та тренінги</button>
             <div class="acordion__content">
                 <p class="acordion__text">Освітні заходи на екологічну тематику, природоохоронного законодавства, питань енергозбереження, ресурсоефективного,
                     більш чистого та органічного виробництва, а також на інші теми згідно запитів замовника</p>
             </div>
+
             <button class="acordion__button">Екоаутсорсинг</button>
             <div class="acordion__content">
-                <p class="acordion__text">Оформлення дозволів на викиди забруднюючих речовин в атмосферне повітря</p>
+
 
                 <ul class="acordion__list">
-                    <li class="acordion__list-item">Послуги екологічної вимірювальної лабораторії</li>
-                    <li class="acordion__list-item">Налагодження систем вентиляції на проектну/рівномірну продуктивність та їх паспортизація</li>
-                    <li class="acordion__list-item">Скорочення санітарно-захисної зони підприємства</li>
-                    <li class="acordion__list-item">Підготовка висновку оцінки впливу на довкілля</li>
+                    <li class="acordion__list-item">Оформлення дозволів на викиди забруднюючих речовин в атмосферне повітря.</li>
+                    <li class="acordion__list-item">Послуги екологічної вимірювальної лабораторії.</li>
+                    <li class="acordion__list-item">Налагодження систем вентиляції на проектну/рівномірну продуктивність та їх паспортизація.</li>
+                    <li class="acordion__list-item">Скорочення санітарно-захисної зони підприємства.</li>
+                    <li class="acordion__list-item">Підготовка висновку оцінки впливу на довкілля.</li>
                     <li class="acordion__list-item">Роботи, пов’язані з отриманням дозволу на викиди забруднюючих речовин в атмосферне повітря.</li>
+                    <li class="acordion__list-item">Вимірювання шумового навантаження.</li>
 
+                </ul>
+            </div>
+
+            <button class="acordion__button">Енергоаудит будівель та промислових об’єктів</button>
+            <div class="acordion__content">
+                <p class="acordion__text">Послуги з проведення енергетичного аудиту, з’ясування ситуації енергоспоживання на промислових та комунальних
+                    підприємств, котельних, об'єктів тепло й електроенергетики, адміністративних будівель, багатоквартирних
+                    та приватних будинків.</p>
+            </div>
+
+            <button class="acordion__button">Інструменти прибутковості для малих та середніх підприємств: PREMA, РЕЧВ</button>
+            <div class="acordion__content">
+                <p class="acordion__text">Консультаційна та експертна підтримка з впровадження систем рентабельного та ресурсоефективного менеджменту.
+                    Запровадження та сертифікація «зелених» офісів.</p>
+            </div>
+
+            <button class="acordion__button">Побудова систем менеджменту ISO500001, 140001</button>
+            <div class="acordion__content">
+                <p class="acordion__text">Експертна підтримка системи енергоменеджменту та консультації щодо сертифікації відповідно до європейських
+                    вимог в партнерстві з провідними міжнародними організаціями.</p>
+            </div>
+
+            <button class="acordion__button">Готові енергетичні рішення</button>
+            <div class="acordion__content">
+                <ul class="acordion__list">
+                    <li class="acordion__list-item">Консультування з питань сонячної енергетики. Альтернативна енергія для вашої оселі та бізнесу.</li>
+                    <li class="acordion__list-item">Підключення, супровід та консультації по «Зеленому тарифу».</li>
+                    <li class="acordion__list-item">Виготовлення сонячних колекторів, ліхтарів, лавок.</li>
+                    <li class="acordion__list-item">Проектування, будівництво і сервіс сонячних електростанцій різних типів.</li>
+                    <li class="acordion__list-item">Встановлення та обслуговування колекторів для підігріву води.</li>
+                    <li class="acordion__list-item">Продаж, монтаж, сервісне обслуговування всієї лінійки обладнання Віссманн/Wiesmann (Котли, сонячні панелі,
+                        теплові насоси, опалення, водопостачання , водовідведення.)</li>
                 </ul>
             </div>
         </div>
         <!-- acordion -->
+
+        <div class="full-page useful-content">
+            <div class="useful-content__wrapper">
+                <iframe class="useful-content__video" width="560" height="315" src="https://www.youtube.com/embed/StTecFtCpT4?rel=0" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+            <div class="useful-content__wrapper">
+                <h2 class="block-title">Завантажте корисні документи</h2>
+                <ul class="list useful-content__doc">
+                    <li class="useful-content_doc-item">
+                        <a href="docs/Metoduka.pdf" class="link useful-content__doc-link">Методика ресурсоефективкого чистого виробництва</a>
+                    </li>
+                    <li class="useful-content_doc-item">
+                        <a href="docs/SDG.pdf" class="link useful-content__doc-link">Цілі сталого розвитку</a>
+                    </li>
+                    <li class="useful-content_doc-item">
+                        <a href="docs/shmatkov.ppt" class="link useful-content__doc-link">Впровадження Норвежської моделі</a>
+                    </li>
+                    <li class="useful-content_doc-item">
+                        <a href="docs/systemy_ecologichnogo_upravlinnya.pdf" class="link useful-content__doc-link">Система екологічного управління</a>
+                    </li>
+                    <li class="useful-content_doc-item">
+                        <a href="docs/Кавитационная.pptx" class="link useful-content__doc-link">Гідродинамічна кавітаційна технологія знезараження</a>
+                    </li>
+                    <li class="useful-content_doc-item">
+                        <a href="docs/Finans.pdf" class="link useful-content__doc-link">Фінансування «зелених» проектів</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End useful-content -->
 
     </div>
     <!-- providers-wrapper -->
 
     <footer class="footer">
         <div class="footer__contacts">
-            <h2 class="block-header">Наші контакти</h2>
+            <h2 class="footer__contacts-title">Наші контакти</h2>
             <ul class="contacts">
                 <li class="contacts__item">
                     <a href="tel:+380332240555" class="contacts__link">
@@ -186,9 +188,8 @@
                 width="800" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
     </footer>
-    <!-- End providers-wrapper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- End footer -->
+
     <!--build:js js/main.min.js -->
     <script src="js/custom.js"></script>
     <!-- endbuild -->

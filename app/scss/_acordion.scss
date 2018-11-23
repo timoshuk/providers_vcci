@@ -1,7 +1,6 @@
 .acordion {
-  background-color: #f2f2f2;
-  box-shadow: 0 1px 5px 1px black;
-  margin: 0;
+  background-color: transparent;
+  margin-bottom: 20px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@
 .acordion__button {
   z-index: 999;
   min-width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   font-weight: 700;
   background-color: var(--main-color);
@@ -34,17 +33,16 @@
   overflow: hidden;
   transition: max-height 0.8s;
 }
-.acordion__text{
+.acordion__text {
   padding: 10px;
 }
 
-.acordion__list{
+.acordion__list {
   padding: 20px;
-  font-weight: 700;
 }
 
 .acordion--active {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 @keyframes accordionIn {
