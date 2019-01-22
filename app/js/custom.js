@@ -7,6 +7,7 @@ window.onload = function () {
     acordionBtn[i].addEventListener("click", function (evt) {
       evt.preventDefault();
       var sib = this.nextElementSibling;
+
       if (sib.classList.contains("acordion--active")) {
         sib.classList.remove("acordion--active");
       } else {
