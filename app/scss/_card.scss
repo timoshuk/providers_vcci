@@ -1,0 +1,19 @@
+.card > li {
+  display: block;
+  list-style: none;
+  background-color: rgba(239, 239, 239, 0.5);
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.card .acordion__text {
+  font-weight: 500;
+}
+
+.card .acordion__list {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
