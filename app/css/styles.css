@@ -531,7 +531,7 @@ h3 {
   padding: 20px; }
 
 .acordion--active {
-  max-height: 500px; }
+  max-height: 200vh; }
 
 @-webkit-keyframes accordionIn {
   0% {
